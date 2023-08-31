@@ -55,9 +55,26 @@ p {
   border-radius: 8px;
 }
 
-.send-message {
+.send-message-div {
   background-color: #c2c1c1;
-  padding: 20px;
+  padding: 12px;
   position: sticky;
   bottom: 0;
+}
+
+.send-message {
+  display: flex;
+  align-items: center;
+}
+
+.attachment {
+  height: 20px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.send {
+  height: 28px;
+  margin: 20px;
+  cursor: pointer;
 }
