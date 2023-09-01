@@ -2,11 +2,67 @@ p {
   margin: 0;
 }
 
+.conversation-container {
+  display: flex;
+}
+
+.logged-in-user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #c2c1c1;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  padding: 10px;
+  border-bottom: 0.5px solid gray;
+}
+
+.DP {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 6px
+}
+
+.log-out-icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.user-section {
+  width: 25%;
+  min-height: 100vh;
+  border-right: 1px solid rgb(202, 194, 194);
+}
+
+.open-chat {
+  max-width: 75%;
+}
+
 .convesation-details {
   background-color: #c2c1c1;
   padding: 20px;
   position: sticky;
   top: 0;
+}
+
+.user-lists {
+  margin-left: 5px;
+  margin-right: 10px;
 }
 
 .chat-headline {
@@ -27,6 +83,10 @@ p {
   font-weight: 600;
 }
 
+.conversation {
+  margin-left: 20px;
+}
+
 .incoming {
   display: flex;
   justify-content: start;
@@ -35,7 +95,7 @@ p {
 .incoming p {
   background-color: #25294a;
   color: rgb(226, 223, 223);
-  max-width: 42%;
+  max-width: 45%;
   margin: 10px 0 10px 0;
   padding: 10px;
   border-radius: 8px;
@@ -49,7 +109,7 @@ p {
 .outgoing p {
   background-color: #406adf;
   color: rgb(226, 223, 223);
-  max-width: 42%;
+  max-width: 45%;
   margin: 10px 0 10px 0;
   padding: 10px;
   border-radius: 8px;

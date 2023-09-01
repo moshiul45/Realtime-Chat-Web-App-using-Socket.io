@@ -1,21 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Conversation Page</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="stylesheets/style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="conversation-container">
-        <div class="user-list"></div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conversation Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+  <link rel="stylesheet" href="stylesheets/style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="conversation-container">
+      <div class="user-section">
+        <div class="logged-in-user">
+          <div class="user-profile">
+            <img class="DP" src="images/user.jpg" alt="User">
+            <p>Moshiul Azam</p>
+          </div>
+          <img class="log-out-icon" src="images/log-out.png" alt="User">
+        </div>
+        <div class="user-search">
+          <input type="text" class="form-control" placeholder="Search...">
+        </div>
+        <div class="user-lists">
+          <div class="user">
+            <img class="DP" src="images/user.jpg" alt="User">
+            <p>Moshiul Azam</p>
+          </div>
+          <div class="user">
+            <img class="DP" src="images/user.jpg" alt="User">
+            <p>Moshiul Azam</p>
+          </div>
+          <div class="user">
+            <img class="DP" src="images/user.jpg" alt="User">
+            <p>Moshiul Azam</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="open-chat">
         <div class="convesation-details">
           <div class="chat-headline">
             <img class="profile-image" src="images/user.jpg" alt="" />
@@ -91,20 +116,17 @@
         <div class="send-message-div">
           <div class="send-message">
             <img class="attachment" src="images/attachment.svg" alt="" />
-            <input
-              type="email"
-              class="form-control"
-              placeholder="Write message"
-            />
+            <input type="email" class="form-control" placeholder="Write message" />
             <img class="send" src="images/send.png" alt="" />
           </div>
         </div>
       </div>
     </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
