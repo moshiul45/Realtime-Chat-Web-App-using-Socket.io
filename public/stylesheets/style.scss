@@ -1,0 +1,158 @@
+$p-margin: 0;
+$gray-border: 0.5px solid gray;
+$light-gray-bg: #c2c1c1;
+$dark-bg: #25294a;
+$blue-bg: #406adf;
+$white-text: rgb(226, 223, 223);
+$base-radius: 8px;
+
+body {
+  p {
+    margin: $p-margin;
+  }
+}
+
+.conversation-container {
+  display: flex;
+}
+
+.logged-in-user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $light-gray-bg;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+
+  .user-profile {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+  }
+
+  .log-out-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+}
+
+.DP {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.user-section {
+  width: 25%;
+  min-height: 100vh;
+  border-right: 1px solid rgb(202, 194, 194);
+
+  .user-search {
+    padding: 10px;
+    position: sticky;
+    background-color: white;
+    top: 80px;
+  }
+}
+
+.open-chat {
+  max-width: 75%;
+
+
+  .conversation-details {
+    background-color: $light-gray-bg;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+  }
+}
+
+.user-lists {
+  margin-left: 5px;
+  margin-right: 10px;
+
+
+  .user {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    padding: 10px;
+    border-bottom: $gray-border;
+  }
+}
+
+.chat-headline {
+  display: flex;
+  align-items: center;
+
+  .profile-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+
+  .user-name {
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+
+.conversation {
+  margin-left: 20px;
+
+  .incoming,
+  .outgoing {
+    display: flex;
+    justify-content: start;
+  }
+
+  .outgoing {
+    justify-content: end;
+  }
+
+  .incoming p {
+    background-color: $dark-bg;
+    color: $white-text;
+    max-width: 45%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: $base-radius;
+  }
+
+  .outgoing p {
+    background-color: $blue-bg;
+    color: $white-text;
+    max-width: 45%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: $base-radius;
+  }
+}
+
+.send-message-div {
+  background-color: $light-gray-bg;
+  padding: 12px;
+  position: sticky;
+  bottom: 0;
+
+  .send-message {
+    display: flex;
+    align-items: center;
+
+    .attachment {
+      height: 20px;
+      margin: 20px;
+      cursor: pointer;
+    }
+
+    .send {
+      height: 28px;
+      margin: 20px;
+      cursor: pointer;
+    }
+  }
+}
