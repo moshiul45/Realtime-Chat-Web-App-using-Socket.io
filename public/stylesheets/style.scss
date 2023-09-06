@@ -73,6 +73,9 @@ body {
 .user-lists {
   margin-left: 5px;
   margin-right: 10px;
+  overflow-y: auto;
+  height: calc(100vh - 100px - 68px);
+
 
 
   .user {
@@ -101,8 +104,32 @@ body {
   }
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+  /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  /* Track background color */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e7e2e2;
+  /* Thumb color */
+}
+
+// body {
+//   scrollbar-width: thin;
+//   /* Width of the scrollbar */
+//   scrollbar-color: #888 #f1f1f1;
+//   /* Thumb and track color */
+// }
+
 .conversation {
+  height: calc(100vh - 104px - 68px);
   margin-left: 20px;
+  overflow-y: auto;
 
   .incoming,
   .outgoing {
